@@ -33,6 +33,7 @@ class Service {
                             for teamJson in teamsJson {
 
                                 let teamId = teamJson["id"] as! Int
+                                let teamName = teamJson["name"] as! String
                                 let shortName = teamJson["shortName"] as! String
                                 let tla = teamJson["tla"] as! String
                                 let crestUrl = teamJson["crestUrl"] as! String
@@ -40,7 +41,7 @@ class Service {
                                 let clubColors = teamJson["clubColors"] as! String
                                 let venue = teamJson["venue"] as! String
 
-                                let newTeam = Team(id: teamId, name: teamJson["name"] as! String, shortName: shortName, tla: tla, crestUrl: crestUrl, founded: founded, clubColors: clubColors, venue: venue)
+                                let newTeam = Team(id: teamId, name: teamName, shortName: shortName, tla: tla, crestUrl: crestUrl, founded: founded, clubColors: clubColors, venue: venue)
 
                                 teams.append(newTeam)
                             }
@@ -53,7 +54,5 @@ class Service {
                 }
             }
         }.resume()
-
-
     }
 }
