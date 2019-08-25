@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Team: Decodable {
+struct Team: Decodable, Identifiable, Comparable {
     var id: Int
     var name: String
     var shortName: String
@@ -17,4 +17,8 @@ struct Team: Decodable {
     var founded: Int
     var clubColors: String
     var venue: String
+}
+
+func < (lhs: Team, rhs: Team) -> Bool {
+    return lhs.shortName < rhs.shortName
 }

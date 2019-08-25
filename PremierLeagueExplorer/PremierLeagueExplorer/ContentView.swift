@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var teamStore: TeamStore
+    
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List {
+                ForEach(teamStore.teams) { team in
+                    TeamRow(team: team)
+                }
+            }.onAppear(perform: teamStore.fetch).navigationBarTitle(Text("Teams"))
+        }
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D76E4C723123CC9005CB544 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D76E4C623123CC9005CB544 /* ApiKeys.plist */; };
+		2DB77B22230CFF7600D5CF27 /* TeamStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB77B21230CFF7600D5CF27 /* TeamStore.swift */; };
 		2DD5B266230B90DD00FCFBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B265230B90DD00FCFBDC /* AppDelegate.swift */; };
 		2DD5B268230B90DD00FCFBDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B267230B90DD00FCFBDC /* SceneDelegate.swift */; };
 		2DD5B26A230B90DD00FCFBDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B269230B90DD00FCFBDC /* ContentView.swift */; };
@@ -15,6 +17,9 @@
 		2DD5B272230B90E000FCFBDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5B270230B90E000FCFBDC /* LaunchScreen.storyboard */; };
 		2DD5B27D230B90E000FCFBDC /* PremierLeagueExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B27C230B90E000FCFBDC /* PremierLeagueExplorerTests.swift */; };
 		2DD5B288230B90E000FCFBDC /* PremierLeagueExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B287230B90E000FCFBDC /* PremierLeagueExplorerUITests.swift */; };
+		2DD5B296230BA45F00FCFBDC /* TeamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B295230BA45F00FCFBDC /* TeamRow.swift */; };
+		2DD5B298230BA59700FCFBDC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B297230BA59700FCFBDC /* Team.swift */; };
+		2DD5B29A230BABA700FCFBDC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B299230BABA700FCFBDC /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D76E4C623123CC9005CB544 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		2DB77B21230CFF7600D5CF27 /* TeamStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStore.swift; sourceTree = "<group>"; };
 		2DD5B262230B90DD00FCFBDC /* PremierLeagueExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PremierLeagueExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD5B265230B90DD00FCFBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DD5B267230B90DD00FCFBDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		2DD5B283230B90E000FCFBDC /* PremierLeagueExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PremierLeagueExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD5B287230B90E000FCFBDC /* PremierLeagueExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueExplorerUITests.swift; sourceTree = "<group>"; };
 		2DD5B289230B90E000FCFBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DD5B295230BA45F00FCFBDC /* TeamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRow.swift; sourceTree = "<group>"; };
+		2DD5B297230BA59700FCFBDC /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		2DD5B299230BABA700FCFBDC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +112,13 @@
 				2DD5B265230B90DD00FCFBDC /* AppDelegate.swift */,
 				2DD5B267230B90DD00FCFBDC /* SceneDelegate.swift */,
 				2DD5B269230B90DD00FCFBDC /* ContentView.swift */,
+				2DD5B295230BA45F00FCFBDC /* TeamRow.swift */,
+				2DD5B297230BA59700FCFBDC /* Team.swift */,
+				2DD5B299230BABA700FCFBDC /* Service.swift */,
+				2DB77B21230CFF7600D5CF27 /* TeamStore.swift */,
 				2DD5B26B230B90E000FCFBDC /* Assets.xcassets */,
 				2DD5B270230B90E000FCFBDC /* LaunchScreen.storyboard */,
+				2D76E4C623123CC9005CB544 /* ApiKeys.plist */,
 				2DD5B273230B90E000FCFBDC /* Info.plist */,
 				2DD5B26D230B90E000FCFBDC /* Preview Content */,
 			);
@@ -241,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD5B272230B90E000FCFBDC /* LaunchScreen.storyboard in Resources */,
+				2D76E4C723123CC9005CB544 /* ApiKeys.plist in Resources */,
 				2DD5B26F230B90E000FCFBDC /* Preview Assets.xcassets in Resources */,
 				2DD5B26C230B90E000FCFBDC /* Assets.xcassets in Resources */,
 			);
@@ -270,6 +286,10 @@
 				2DD5B266230B90DD00FCFBDC /* AppDelegate.swift in Sources */,
 				2DD5B268230B90DD00FCFBDC /* SceneDelegate.swift in Sources */,
 				2DD5B26A230B90DD00FCFBDC /* ContentView.swift in Sources */,
+				2DD5B298230BA59700FCFBDC /* Team.swift in Sources */,
+				2DB77B22230CFF7600D5CF27 /* TeamStore.swift in Sources */,
+				2DD5B296230BA45F00FCFBDC /* TeamRow.swift in Sources */,
+				2DD5B29A230BABA700FCFBDC /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
