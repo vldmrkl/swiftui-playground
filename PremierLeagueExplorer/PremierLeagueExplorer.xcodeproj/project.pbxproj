@@ -458,6 +458,10 @@
 				DEVELOPMENT_ASSET_PATHS = "PremierLeagueExplorer/Preview\\ Content";
 				DEVELOPMENT_TEAM = J82C364K42;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PremierLeagueExplorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,6 +482,10 @@
 				DEVELOPMENT_ASSET_PATHS = "PremierLeagueExplorer/Preview\\ Content";
 				DEVELOPMENT_TEAM = J82C364K42;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PremierLeagueExplorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

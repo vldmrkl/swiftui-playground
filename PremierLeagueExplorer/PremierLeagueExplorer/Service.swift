@@ -8,6 +8,29 @@
 
 import Foundation
 
+let teamLogoURLs = [
+    "Arsenal": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4df.png",
+    "Aston Villa": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Aston_Villa_FC_crest_%282016%29.svg/1200px-Aston_Villa_FC_crest_%282016%29.svg.png",
+    "Bournemouth": "https://upload.wikimedia.org/wikipedia/ro/thumb/b/bf/AFC_Bournemouth.svg/1200px-AFC_Bournemouth.svg.png",
+    "Brighton Hove": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png",
+    "Burnley": "https://upload.wikimedia.org/wikipedia/sco/0/02/Burnley_FC_badge.png",
+    "Chelsea": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e1.png",
+    "Crystal Palace": "https://upload.wikimedia.org/wikipedia/de/b/bf/Crystal_Palace_F.C._logo_%282013%29.png",
+    "Everton": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e3.png",
+    "Leicester City": "https://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png",
+    "Liverpool": "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
+    "Man City": "https://pluspng.com/img-png/manchester-city-fc-png-manchester-city-fc-png-1024.png",
+    "Man United": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e7.png",
+    "Newcastle": "https://upload.wikimedia.org/wikipedia/hif/2/25/Newcastle_United_Logo.png",
+    "Norwich": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e9.png",
+    "Sheffield Utd": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1200px-Sheffield_United_FC_logo.svg.png",
+    "Southampton": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4ea.png",
+    "Tottenham": "https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png",
+    "Watford": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4ef.png",
+    "West Ham": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png",
+    "Wolverhampton": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png",
+]
+
 class Service {
     let API_KEY: String = {
         if  let path = Bundle.main.path(forResource: "ApiKeys", ofType: "plist"),
@@ -36,7 +59,7 @@ class Service {
                                 let teamName = teamJson["name"] as! String
                                 let shortName = teamJson["shortName"] as! String
                                 let tla = teamJson["tla"] as! String
-                                let crestUrl = teamJson["crestUrl"] as! String
+                                let crestUrl = teamLogoURLs[shortName]!
                                 let founded = teamJson["founded"] as? Int ?? 0
                                 let clubColors = teamJson["clubColors"] as! String
                                 let venue = teamJson["venue"] as! String
