@@ -24,7 +24,7 @@ struct TeamRow: View {
 
     var body: some View {
         HStack {
-            Image(uiImage: teamLogo).resizable().aspectRatio(contentMode: .fit).frame(width: 32.0, height: 32.0) 
+            Image(uiImage: teamLogo).resizable().aspectRatio(contentMode: .fit).frame(width: 40.0, height: 40.0) 
             Text(team.shortName)
         }
     }
