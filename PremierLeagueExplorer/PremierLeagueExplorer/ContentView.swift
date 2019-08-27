@@ -15,7 +15,9 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(teamStore.teams) { team in
-                    TeamRow(team: team)
+                    NavigationLink(destination: TeamView(team: team)) {
+                        TeamRow(team: team)
+                    }
                 }
             }.onAppear(perform: teamStore.fetch).navigationBarTitle(Text("Teams"))
         }
