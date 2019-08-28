@@ -15,7 +15,7 @@ let teamLogoURLs = [
     "Brighton Hove": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png",
     "Burnley": "https://upload.wikimedia.org/wikipedia/sco/0/02/Burnley_FC_badge.png",
     "Chelsea": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e1.png",
-    "Crystal Palace": "https://upload.wikimedia.org/wikipedia/de/b/bf/Crystal_Palace_F.C._logo_%282013%29.png",
+    "Crystal Palace": "https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png",
     "Everton": "https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e3.png",
     "Leicester City": "https://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png",
     "Liverpool": "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
