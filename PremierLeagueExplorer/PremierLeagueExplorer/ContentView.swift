@@ -13,14 +13,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(teamStore.teams) { team in
-                    NavigationLink(destination: TeamView(team: team)) {
-                        TeamRow(team: team)
+            if (teamStore.teams.count > 0) {
+                List {
+                    ForEach(teamStore.teams) { team in
+                        NavigationLink(destination: TeamView(team: team)) {
+                            TeamRow(team: team)
+                        }
                     }
-                }
-            }.onAppear(perform: teamStore.fetch).navigationBarTitle(Text("Teams"))
-        }
+                }.navigationBarTitle(Text("Teams"))
+            } else {
+                Text("Loading...")
+            }
+        }.onAppear(perform: teamStore.fetch)
     }
 }
 
