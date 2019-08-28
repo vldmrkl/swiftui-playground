@@ -22,15 +22,16 @@ struct TeamView: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(alignment: .trailing) {
             HStack(alignment: .top) {
-                Image(uiImage: teamLogo).resizable().aspectRatio(contentMode: .fit).frame(width: 120.0, height: 120.0)
+                Image(uiImage: teamLogo).resizable().aspectRatio(contentMode: .fit).frame(width: 120.0, height: 120.0).padding(.leading, 20)
+                Spacer()
                 VStack(alignment: .leading) {
-                    Text(team.shortName).font(.title).bold()
-                    Text("Founded in " + String(team.founded)).font(.caption)
-                    Text("Stadium: \(team.venue)").font(.caption)
-                    Text("Colors: \(team.clubColors)").font(.caption)
-                }.padding(.top, 10).padding(.leading, 15)
+                    Text(team.name).font(.title).bold().lineLimit(nil)
+                    Text("Founded in " + String(team.founded)).font(.caption).lineLimit(1)
+                    Text("Stadium: \(team.venue)").font(.caption).lineLimit(2)
+                    Text("Colors: \(team.clubColors)").font(.caption).lineLimit(1)
+                }.padding(.trailing, 10).frame(width: 220)
 
             }
             Spacer()
