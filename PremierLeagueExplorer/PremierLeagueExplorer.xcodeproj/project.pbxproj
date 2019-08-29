@@ -22,6 +22,7 @@
 		2DD5B296230BA45F00FCFBDC /* TeamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B295230BA45F00FCFBDC /* TeamRow.swift */; };
 		2DD5B298230BA59700FCFBDC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B297230BA59700FCFBDC /* Team.swift */; };
 		2DD5B29A230BABA700FCFBDC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B299230BABA700FCFBDC /* Service.swift */; };
+		2DE52DB8231778C40087C20F /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE52DB7231778C40087C20F /* PlayerList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2DD5B295230BA45F00FCFBDC /* TeamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRow.swift; sourceTree = "<group>"; };
 		2DD5B297230BA59700FCFBDC /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		2DD5B299230BABA700FCFBDC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2DE52DB7231778C40087C20F /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				2DD5B295230BA45F00FCFBDC /* TeamRow.swift */,
 				2DB77B21230CFF7600D5CF27 /* TeamStore.swift */,
 				2D0033C92314E8F700923F88 /* TeamView.swift */,
+				2DE52DB7231778C40087C20F /* PlayerList.swift */,
 				2DD5B299230BABA700FCFBDC /* Service.swift */,
 				2DD5B26B230B90E000FCFBDC /* Assets.xcassets */,
 				2DD5B270230B90E000FCFBDC /* LaunchScreen.storyboard */,
@@ -295,6 +298,7 @@
 				2D0033CA2314E8F700923F88 /* TeamView.swift in Sources */,
 				2DD5B298230BA59700FCFBDC /* Team.swift in Sources */,
 				2DB77B22230CFF7600D5CF27 /* TeamStore.swift in Sources */,
+				2DE52DB8231778C40087C20F /* PlayerList.swift in Sources */,
 				2DD5B296230BA45F00FCFBDC /* TeamRow.swift in Sources */,
 				2D198D692316307300871583 /* Player.swift in Sources */,
 				2DD5B29A230BABA700FCFBDC /* Service.swift in Sources */,

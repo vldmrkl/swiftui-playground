@@ -27,20 +27,6 @@ struct TeamView: View {
         }
     }
 
-    struct PlayerList: View {
-        var title: String
-        var players: [Player]
-
-        var body: some View {
-            VStack(alignment: .leading) {
-                Text(title).font(.subheadline).bold()
-                ForEach(players) { player in
-                    Text(player.name).font(.body)
-                }
-            }.padding(.leading, 30)
-        }
-    }
-
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
