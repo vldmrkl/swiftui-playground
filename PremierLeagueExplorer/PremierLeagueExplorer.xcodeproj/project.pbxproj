@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D0033CA2314E8F700923F88 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0033C92314E8F700923F88 /* TeamView.swift */; };
+		2D198D692316307300871583 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D198D682316307300871583 /* Player.swift */; };
 		2D76E4C723123CC9005CB544 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D76E4C623123CC9005CB544 /* ApiKeys.plist */; };
 		2DB77B22230CFF7600D5CF27 /* TeamStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB77B21230CFF7600D5CF27 /* TeamStore.swift */; };
 		2DD5B266230B90DD00FCFBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5B265230B90DD00FCFBDC /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		2D0033C92314E8F700923F88 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		2D198D682316307300871583 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2D76E4C623123CC9005CB544 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		2DB77B21230CFF7600D5CF27 /* TeamStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStore.swift; sourceTree = "<group>"; };
 		2DD5B262230B90DD00FCFBDC /* PremierLeagueExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PremierLeagueExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				2DD5B267230B90DD00FCFBDC /* SceneDelegate.swift */,
 				2DD5B269230B90DD00FCFBDC /* ContentView.swift */,
 				2DD5B297230BA59700FCFBDC /* Team.swift */,
+				2D198D682316307300871583 /* Player.swift */,
 				2DD5B295230BA45F00FCFBDC /* TeamRow.swift */,
 				2DB77B21230CFF7600D5CF27 /* TeamStore.swift */,
 				2D0033C92314E8F700923F88 /* TeamView.swift */,
@@ -293,6 +296,7 @@
 				2DD5B298230BA59700FCFBDC /* Team.swift in Sources */,
 				2DB77B22230CFF7600D5CF27 /* TeamStore.swift in Sources */,
 				2DD5B296230BA45F00FCFBDC /* TeamRow.swift in Sources */,
+				2D198D692316307300871583 /* Player.swift in Sources */,
 				2DD5B29A230BABA700FCFBDC /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

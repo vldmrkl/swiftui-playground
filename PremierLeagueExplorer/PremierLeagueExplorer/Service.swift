@@ -96,7 +96,7 @@ class Service {
                                 let playerId = player["id"] as! Int
                                 let playerName = player["name"] as! String
                                 let playerPosition = player["position"] as! String
-                                let dob = player["dateOfBirth"] as! String
+                                let dob = player["dateOfBirth"] as? String ?? "N/A"
                                 let country = player["countryOfBirth"] as! String
                                 let nationality = player["nationality"] as! String
                                 let shirtNumber = player["shirtNumber"] as? Int ?? 0
