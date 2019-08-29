@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TeamView: View {
+    @State var squad: [Player] = []
     var team: Team
     var teamLogo: UIImage {
         get {
@@ -35,6 +36,16 @@ struct TeamView: View {
 
             }
             Spacer()
-        }
+        }.onAppear(perform: {
+            let service = Service()
+            service.fetchPlayers(for: self.team.id) { [self] result in
+                DispatchQueue.main.async {
+                    switch result {
+                        case .success(let players): self.squad = players
+                        case .failure: self.squad = []
+                    }
+                }
+            }
+        })
     }
 }

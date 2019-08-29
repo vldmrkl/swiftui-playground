@@ -78,4 +78,39 @@ class Service {
             }
         }.resume()
     }
+
+    func fetchPlayers(for teamId: Int, handler: @escaping (Result<[Player], Error>) -> Void) {
+        var players: [Player] = []
+        guard let url = URL(string: "https://api.football-data.org/v2/teams/\(teamId)")  else { return }
+        var request = URLRequest(url: url)
+        request.setValue(API_KEY, forHTTPHeaderField: "X-Auth-Token")
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let responseData = data {
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any] {
+                        let squad = json["squad"] as! [[String: Any]]
+                        for player in squad {
+                            if let role = player["role"] as? String,
+                                role == "PLAYER" {
+                                let playerId = player["id"] as! Int
+                                let playerName = player["name"] as! String
+                                let playerPosition = player["position"] as! String
+                                let dob = player["dateOfBirth"] as! String
+                                let country = player["countryOfBirth"] as! String
+                                let nationality = player["nationality"] as! String
+                                let shirtNumber = player["shirtNumber"] as? Int ?? 0
+
+                                let newPlayer = Player(id: playerId, name: playerName, position: playerPosition, dateOfBirth: dob, countryOfBirth: country, nationality: nationality, shirtNumber: shirtNumber, role: role)
+                                players.append(newPlayer)
+                            }
+                        }
+                    }
+                    handler(.success(players))
+                } catch {
+                    handler(.failure(error))
+                }
+            }
+        }.resume()
+    }
 }
