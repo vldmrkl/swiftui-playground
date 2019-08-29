@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Team: Decodable, Identifiable, Comparable {
+struct Team: Identifiable, Comparable {
     var id: Int
     var name: String
     var shortName: String
