@@ -20,8 +20,8 @@ class TeamStore: ObservableObject {
         service.fetchTeams() { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
-                case .success(let teams): self?.teams = teams
-                case .failure: self?.teams = []
+                    case .success(let teams): self?.teams = teams
+                    case .failure: self?.teams = []
                 }
             }
         }
