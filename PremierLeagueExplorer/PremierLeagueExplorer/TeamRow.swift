@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import WebKit
 
 struct TeamRow: View {
     var team: Team
